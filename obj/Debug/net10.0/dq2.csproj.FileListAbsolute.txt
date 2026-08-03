@@ -1,0 +1,14 @@
+C:\Users\HARSHAL SHARMA\Desktop\dq2\obj\Debug\net10.0\dq2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HARSHAL SHARMA\Desktop\dq2\obj\Debug\net10.0\dq2.AssemblyInfoInputs.cache
+C:\Users\HARSHAL SHARMA\Desktop\dq2\obj\Debug\net10.0\dq2.AssemblyInfo.cs
+C:\Users\HARSHAL SHARMA\Desktop\dq2\obj\Debug\net10.0\dq2.csproj.CoreCompileInputs.cache
+C:\Users\HARSHAL SHARMA\Desktop\dq2\bin\Debug\net10.0\dq2.exe
+C:\Users\HARSHAL SHARMA\Desktop\dq2\bin\Debug\net10.0\dq2.deps.json
+C:\Users\HARSHAL SHARMA\Desktop\dq2\bin\Debug\net10.0\dq2.runtimeconfig.json
+C:\Users\HARSHAL SHARMA\Desktop\dq2\bin\Debug\net10.0\dq2.dll
+C:\Users\HARSHAL SHARMA\Desktop\dq2\bin\Debug\net10.0\dq2.pdb
+C:\Users\HARSHAL SHARMA\Desktop\dq2\obj\Debug\net10.0\dq2.dll
+C:\Users\HARSHAL SHARMA\Desktop\dq2\obj\Debug\net10.0\refint\dq2.dll
+C:\Users\HARSHAL SHARMA\Desktop\dq2\obj\Debug\net10.0\dq2.pdb
+C:\Users\HARSHAL SHARMA\Desktop\dq2\obj\Debug\net10.0\dq2.genruntimeconfig.cache
+C:\Users\HARSHAL SHARMA\Desktop\dq2\obj\Debug\net10.0\ref\dq2.dll
