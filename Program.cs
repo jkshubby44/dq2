@@ -23,10 +23,12 @@
             Console.WriteLine(" =========================== ");
             
             Console.WriteLine(" we have : ");
-            Console.WriteLine(" 1 : Teacher Management ");
-            Console.WriteLine(" 2 : Student Management ");
-            Console.WriteLine(" 3 : Sports Management ");
-            Console.WriteLine(" 4 :    --- Exit ---");
+            Console.WriteLine(" 1 : Dashboard");
+            Console.WriteLine(" 2 : Teacher Management ");
+            Console.WriteLine(" 3 : Student Management ");
+            Console.WriteLine(" 4 : Sports Management ");
+            Console.WriteLine(" 5 : About School");
+            Console.WriteLine(" 6 : --- Exit ---");
             
             Console.WriteLine("-------------------------");
             Console.WriteLine("Enter your choice ");
@@ -36,22 +38,33 @@
             
             switch(choice)
             {
+
+
+
                 case 1:
+                Console.WriteLine("Dashboard selected");
+                break;
+
+                case 2:
                 TeacherManagement teacher = new TeacherManagement();
                 teacher.Menu();
                 break;
                 
-                case 2:
+                case 3:
                 StudentManagement student = new StudentManagement();
                 student.Menu();
                 break;
                 
-                case 3:
+                case 4:
                 SportsManagement sports = new SportsManagement();
                 sports.Menu();
                 break;
                 
-                case 4:
+                case 5:
+                Console.WriteLine("About School selected");
+                break;
+                
+                case 6:
                 isrunning = false;
                 Console.WriteLine("---SYSTEM IS OFF--- ");
                 break;
