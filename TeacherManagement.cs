@@ -45,7 +45,7 @@ namespace program
                     break;
 
                 case 3:
-                    Console.WriteLine("Add Teacher selected");
+                    AddTeacher();
                     break;
 
                 case 4:
@@ -84,5 +84,26 @@ namespace program
     
 
 
+
+
+public void AddTeacher()
+{
+    Console.WriteLine("=========ADDING TEACHER==========");
+
+    Console.WriteLine("ENTER TEACHER ID: ");
+    int id = Convert.ToInt32(Console.ReadLine());
+
+    Console.WriteLine("ENTER TEACHER NAME : ");
+    string name = Console.ReadLine();
+
+    Console.WriteLine("ENTER THE SUBJECT :");
+    string subject = Console.ReadLine();
+
+    Teacher teacher = new Teacher(id, name, subject);
+    teachers.Add(teacher);
+
+    Console.WriteLine("NEW TEACHER ADDED :");
+
+}
 }
 }
