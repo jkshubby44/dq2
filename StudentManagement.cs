@@ -49,7 +49,7 @@ namespace program
                     break;
 
                 case 4:
-                    Console.WriteLine("Remove Student selected");
+                    RemoveStudent();
                     break;
 
                 case 5:
@@ -81,6 +81,37 @@ namespace program
     }
 
     Console.WriteLine("Student not found.");
+}
+ public void RemoveStudent()
+ {
+
+     Console.WriteLine("ENTER STUDENT ID : ");
+     int id = Convert.ToInt32(Console.ReadLine());
+
+     Student studentToRemove = null;
+
+
+     foreach (Student student in students)
+     {
+         if (student.id == id)
+         {
+             studentToRemove = student;
+
+             break;
+         }
+     }
+
+     if (studentToRemove != null)
+     {
+         students.Remove(studentToRemove);
+         Console.WriteLine("=========REMOVED SUCCESSUFULLYY==========");
+     }
+     else
+     {
+         Console.WriteLine(" NO Student FOUND !! ");
+
+     }
+
 }
 }
 }
