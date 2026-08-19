@@ -42,7 +42,8 @@
 
 
                 case 1:
-                Console.WriteLine("Dashboard selected");
+                Dashboard dashboard = new Dashboard();
+                dashboard.menu();
                 break;
 
                 case 2:
