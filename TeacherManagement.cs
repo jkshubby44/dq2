@@ -41,7 +41,7 @@ namespace program
                     break;
 
                 case 2:
-                    Console.WriteLine("Search by Name selected");
+                    SearchTeacherByName();
                     break;
 
                 case 3:
@@ -49,7 +49,7 @@ namespace program
                     break;
 
                 case 4:
-                    Console.WriteLine("Remove Teacher selected");
+                    RemoveTeacher();
                     break;
 
                 case 5:
@@ -104,6 +104,56 @@ public void AddTeacher()
 
     Console.WriteLine("NEW TEACHER ADDED :");
 
+}
+ public void RemoveTeacher()
+ {
+
+     Console.WriteLine("ENTER TEACHER ID : ");
+     int id = Convert.ToInt32(Console.ReadLine());
+
+     Teacher teacherToRemove = null;
+
+
+     foreach (Teacher teacher in teachers)
+     {
+         if (teacher.id == id)
+         {
+             teacherToRemove = teacher;
+
+             break;
+         }
+     }
+
+     if (teacherToRemove != null)
+     {
+         teachers.Remove(teacherToRemove);
+         Console.WriteLine("=========REMOVED SUCCESSUFULLYY==========");
+     }
+     else
+     {
+         Console.WriteLine(" NO TEACHER FOUND !! ");
+
+     }
+
+}
+public void SearchTeacherByName()
+{
+    Console.Write("Enter Teacher Name : ");
+    string name = (Console.ReadLine());
+
+    foreach (Teacher teacher in teachers)
+    {
+        if (teacher.name == name)
+        {
+            Console.WriteLine("Teacher Found!");
+            Console.WriteLine("ID: " + teacher.id);
+            Console.WriteLine("Name: " + teacher.name);
+            Console.WriteLine("Subject: " + teacher.subject);
+            return;
+        }
+    }
+
+    Console.WriteLine("Teacher not found.");
 }
 }
 }
