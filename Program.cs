@@ -61,7 +61,8 @@
                 break;
                 
                 case 5:
-                Console.WriteLine("About School selected");
+                AboutSchool about = new AboutSchool();
+                about.menu();
                 break;
                 
                 case 6:
