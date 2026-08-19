@@ -9,7 +9,7 @@
 
     namespace program
     {
-    internal class HelloWorld
+     class Guest
         {
         static void Main(string[] args)
         {
