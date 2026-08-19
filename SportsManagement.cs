@@ -98,8 +98,41 @@ public void AddSport()
      Console.WriteLine("New Sport Added");
 
 }
+
+ public void RemoveSport()
+ {
+
+     Console.WriteLine("ENTER SPORT ID : ");
+     int id = Convert.ToInt32(Console.ReadLine());
+
+     Sport sportToRemove = null;
+
+
+     foreach (Sport sport in sports)
+     {
+         if (sport.id == id)
+         {
+             sportToRemove = sport;
+
+             break;
+         }
+     }
+
+     if (sportToRemove != null)
+     {
+         sports.Remove(sportToRemove);
+         Console.WriteLine("=========REMOVED SUCCESSUFULLYY==========");
+     }
+     else
+     {
+         Console.WriteLine(" NO SPORT FOUND !! ");
+
+     }
+
+ }
+}
 }
 
-}
+
 
 
