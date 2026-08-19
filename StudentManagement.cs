@@ -45,7 +45,7 @@ namespace program
                     break;
 
                 case 3:
-                    Console.WriteLine("Add Student selected");
+                    AddStudent();
                     break;
 
                 case 4:
@@ -113,5 +113,28 @@ namespace program
      }
 
 }
+
+ public void AddStudent()
+ {
+     Console.WriteLine("=========Adding Student========");
+
+     Console.WriteLine("Enter Student ID : ");
+     int id = Convert.ToInt32(Console.ReadLine());
+
+     Console.WriteLine("Enter student name : ");
+     string name = Console.ReadLine();
+
+     Console.WriteLine("Enter Student Class : ");
+     int Class = Convert.ToInt32(Console.ReadLine());
+
+     Student newstudent = new Student(id, name, Class);
+
+     students.Add(newstudent);
+
+     Console.WriteLine("NEW STUDENT ADDED !!");
+
+
+ }
+
 }
 }
