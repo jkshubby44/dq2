@@ -41,7 +41,7 @@ namespace program
                     break;
 
                 case 2:
-                    Console.WriteLine("Search by Name selected");
+                    SearchStudentByName();
                     break;
 
                 case 3:
@@ -136,5 +136,24 @@ namespace program
 
  }
 
+ public void SearchStudentByName()
+ {
+     Console.Write("Enter Student Name: ");
+     string name = (Console.ReadLine());
+
+     foreach (Student student in students)
+     {
+         if (student.name == name)
+         {
+             Console.WriteLine("Student Found!");
+             Console.WriteLine("ID: " + student.id);
+             Console.WriteLine("Name: " + student.name);
+             Console.WriteLine("Subject: " + student.Class);
+             return;
+         }
+     }
+
+     Console.WriteLine("Student not found.");
+ }
 }
 }
