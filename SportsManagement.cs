@@ -39,7 +39,7 @@ namespace program
                     break;
 
                 case 2:
-                    Console.WriteLine("Search by Name selected");
+                    SearchSportsByName();
                     break;
 
                 case 3:
@@ -47,7 +47,7 @@ namespace program
                     break;
 
                 case 4:
-                    Console.WriteLine("Remove Sport selected");
+                    RemoveSport();
                     break;
 
                 case 5:
@@ -130,6 +130,26 @@ public void AddSport()
      }
 
  }
+   public void SearchSportsByName()
+  {
+      Console.Write("Enter Sport Name: ");
+      string name = (Console.ReadLine());
+
+      foreach (Sport sport in sports)
+      {
+          if (sport.name == name)
+          {
+              Console.WriteLine("Sport Found!");
+              Console.WriteLine("ID: " + sport.id);
+              Console.WriteLine("Name: " + sport.name);
+              Console.WriteLine("Subject: " + sport.CoachName);
+              return;
+          }
+      }
+
+      Console.WriteLine("Sport not found.");
+  }
+
 }
 }
 
