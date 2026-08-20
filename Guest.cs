@@ -11,9 +11,8 @@
     {
      class Guest
         {
-        static void Main(string[] args)
-        {
-            
+        public void menu()
+            {
             bool isrunning = true;
             
             while( isrunning  )
