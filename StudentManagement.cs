@@ -7,7 +7,7 @@ namespace program
 {
     class StudentManagement
 {
-    List<Student> students = new List<Student>()
+   public List<Student> students =  new List<Student>()
     {
         new Student(101,"Saroj",12),
         new Student(102,"Jai", 10),
@@ -24,11 +24,13 @@ namespace program
             Console.WriteLine(" STUDENT MANAGEMENT ");
             Console.WriteLine("===========================");
 
-            Console.WriteLine("1. Search Student by ID");
-            Console.WriteLine("2. Search Student by Name");
-            Console.WriteLine("3. Add Student");
-            Console.WriteLine("4. Remove Student");
-            Console.WriteLine("5. Back to Main Menu");
+
+            Console.WriteLine("1. View all students");
+            Console.WriteLine("2. Search Student by ID");
+            Console.WriteLine("3. Search Student by Name");
+            Console.WriteLine("4. Add Student");
+            Console.WriteLine("5. Remove Student");
+            Console.WriteLine("6. Back to Main Menu");
 
             Console.Write("Enter your choice: ");
 
@@ -36,23 +38,28 @@ namespace program
 
             switch(choice)
             {
-                case 1:
-                    SearchStudentByID();
+                
+                 case 1:
+                   ViewAllStudents();
                     break;
 
                 case 2:
-                    SearchStudentByName();
+                    SearchStudentByID();
                     break;
 
                 case 3:
-                    AddStudent();
+                    SearchStudentByName();
                     break;
 
                 case 4:
-                    RemoveStudent();
+                    AddStudent();
                     break;
 
                 case 5:
+                    RemoveStudent();
+                    break;
+
+                case 6:
                     studentRunning = false;
                     break;
 
@@ -63,6 +70,22 @@ namespace program
         }
     }
     
+ public void ViewAllStudents()
+    {
+        Console.WriteLine("===========================");
+        Console.WriteLine("       MY STUDENTS");
+        Console.WriteLine("===========================");
+
+        foreach (Student student in students)
+        {
+            Console.WriteLine(
+                "ID: " + student.id +
+                " | Name: " + student.name +
+                " | Class: " + student.Class
+            );
+        }
+    }
+
      public void SearchStudentByID()
 {
     Console.Write("Enter Student ID: ");
