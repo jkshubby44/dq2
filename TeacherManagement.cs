@@ -6,12 +6,12 @@ namespace program
 {
     class TeacherManagement
     {
-        List<Teacher> teachers = new List<Teacher>()
+        List<TeacherConsoleModel> teachers = new List<TeacherConsoleModel>()
         {
-            new Teacher(101,"Divya","Maths"),
-            new Teacher(102,"Priya", "CS"),
-        new Teacher(103,"Akash","Physcis")
-    };
+            new TeacherConsoleModel(101,"Divya","Maths"),
+            new TeacherConsoleModel(102,"Priya", "CS"),
+            new TeacherConsoleModel(103,"Akash","Physcis")
+        };
     
     
     public void Menu()

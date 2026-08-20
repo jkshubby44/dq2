@@ -3,13 +3,13 @@
  
  namespace program
  {
-    class Teacher
+    class TeacherConsoleModel
 {
     public int id;
     public string name;
     public string subject;
 
-public  Teacher(int id, string name, string subject)
+public TeacherConsoleModel(int id, string name, string subject)
 {
 this.id = id;
 this.name= name;

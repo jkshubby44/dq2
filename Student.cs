@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace program
 {
-    class Student
+     public class Student
 {
     public int id;
     public string name;

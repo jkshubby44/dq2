@@ -13,3 +13,4 @@ C:\Users\HARSHAL SHARMA\Desktop\dq2\obj\Debug\net10.0\dq2.pdb
 C:\Users\HARSHAL SHARMA\Desktop\dq2\obj\Debug\net10.0\dq2.genruntimeconfig.cache
 C:\Users\HARSHAL SHARMA\Desktop\dq2\obj\Debug\net10.0\ref\dq2.dll
 C:\Users\HARSHAL SHARMA\Desktop\dq2\obj\Debug\net10.0\dq2.sourcelink.json
+C:\Users\HARSHAL SHARMA\Desktop\dq2\obj\Debug\net10.0\dq2.csproj.AssemblyReference.cache
