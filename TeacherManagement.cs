@@ -67,7 +67,7 @@ namespace program
     Console.Write("Enter Teacher ID: ");
     int id = Convert.ToInt32(Console.ReadLine());
 
-    foreach (Teacher teacher in teachers)
+    foreach (TeacherConsoleModel teacher in teachers)
     {
         if (teacher.id == id)
         {
@@ -99,7 +99,7 @@ public void AddTeacher()
     Console.WriteLine("ENTER THE SUBJECT :");
     string subject = Console.ReadLine();
 
-    Teacher teacher = new Teacher(id, name, subject);
+    TeacherConsoleModel teacher = new TeacherConsoleModel(id, name, subject);
     teachers.Add(teacher);
 
     Console.WriteLine("NEW TEACHER ADDED :");
@@ -111,10 +111,10 @@ public void AddTeacher()
      Console.WriteLine("ENTER TEACHER ID : ");
      int id = Convert.ToInt32(Console.ReadLine());
 
-     Teacher teacherToRemove = null;
+     TeacherConsoleModel teacherToRemove = null;
 
 
-     foreach (Teacher teacher in teachers)
+     foreach (TeacherConsoleModel teacher in teachers)
      {
          if (teacher.id == id)
          {
@@ -141,7 +141,7 @@ public void SearchTeacherByName()
     Console.Write("Enter Teacher Name : ");
     string name = (Console.ReadLine());
 
-    foreach (Teacher teacher in teachers)
+    foreach (TeacherConsoleModel teacher in teachers)
     {
         if (teacher.name == name)
         {
