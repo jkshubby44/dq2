@@ -29,6 +29,9 @@ namespace program
                 Console.WriteLine(" ENTER YOUR PASSWORD ");
                 int pass = Convert.ToInt32(Console.ReadLine());
 
+                Console.WriteLine("DEBUG NAME: [" + name + "]");
+Console.WriteLine("DEBUG PASSWORD: [" + pass + "]");
+
                 if (name == Staffname && pass == staffpass)
                 {
                     Console.WriteLine(" !!!Matched!!!");
@@ -42,7 +45,7 @@ namespace program
                 {
                     Console.WriteLine(" !!!Matched!!!");
                     
-                    role = "Teacher ";
+                    role = "teacher";
                     islogin = false;
                 }
                 else if (name == EMname && pass == EMnamepass)
@@ -71,7 +74,7 @@ namespace program
                     aa.menu();
                     break;
 
-                case "Teacher":
+                case "teacher":
                     techo tf = new techo();
                     tf.menu();
                     break;
